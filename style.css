@@ -121,4 +121,12 @@ img{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-20deg); 
+
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move{
+    from{
+        transform: translate(-50%, -55%) rotate(-25deg);
+    }
 }
