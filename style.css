@@ -1,10 +1,12 @@
 body{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 91%);
+    background: rgb(251, 185, 222);
+  background: linear-gradient(112deg, rgba(251, 185, 222, 1) 0%, rgba(139, 247, 249, 1) 100%);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-family: sans-serif;
 }
 
 /* TAMANHO DA TELA QUE FICA EM EFEITO DE VIDRO*/
@@ -32,4 +34,31 @@ body{
     box-shadow: inset 0 0 2000px rgba(255,255,255,.5);
     filter: blur(10px);
     margin: -20px;
+}
+
+/* MENU */
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    color: #fff;
+    padding: 0;
+}
+
+.menu ul li{
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.active{
+    background: #fc8828;
+    padding: 3px 15px;
+    border-radius: 8px;
 }
