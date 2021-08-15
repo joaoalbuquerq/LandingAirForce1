@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background: rgb(251, 185, 222);
   background: linear-gradient(112deg, rgba(251, 185, 222, 1) 0%, rgba(139, 247, 249, 1) 100%);
@@ -19,6 +23,9 @@ body{
     background: inherit;
     overflow: hidden;
     z-index: 1;
+
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -72,6 +79,46 @@ body{
     height: 100%;
 }
 
+.content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.content-text{
+    color: white;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.content-text h1,h3{
+    margin: 0;
+}
+
+.content-text h1{
+    font-size: 3.5em;
+}
+
+.right{
+    text-align: right;
+    margin-top: 150px;
+}
+
+.left{
+    margin-top: -300px;
+}
+
 .social-media svg{
-    margin: 15px;
+    margin: 15px 30px;
+}
+
+img{
+    position: absolute;
+    width: 50%;
+
+    /* CENTRALIZA A IMAGEM AO MEIO */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg); 
 }
